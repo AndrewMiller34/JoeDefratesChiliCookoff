@@ -1,0 +1,59 @@
+﻿.mainMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.mainMenu li {
+    float: left;
+    background-color: inherit;
+}
+
+.mainMenu li a {
+    display: inline-block;
+    color: rgb(200,130,45);
+    font-family: Verdana;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.mainMenu li a:hover {
+    background-color: #000;
+}
+
+
+
+.sponsorsList ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.sponsorsList li {
+    text-align:center;
+    background-color: inherit;
+    color: rgb(200,130,45);
+    font-family: Verdana;
+}
+
+.maxWidthTable {
+    width: 1024px;
+}
+
+
+.eventHistoryList ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.eventHistoryList li {
+    text-align:center;
+    background-color: inherit;
+    color: rgb(200,130,45);
+    font-family: Verdana;
+}

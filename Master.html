@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="cookoffApp">
+
+<head>
+    <title>Joe Defrates Memorial Chilli Cookoff!</title>
+
+    <!-- SCROLLS -->
+    <link rel="stylesheet" type="text/css" href="Styles/Site.css" />
+    <link rel="stylesheet" type="text/css" href="Styles/Layout.css" />
+
+    <!-- SPELLS -->
+    <script src="Scripts/angularjs/angular.js"></script>
+    <script src="Scripts/angularjs/angular-route.js"></script>
+    <script src="Scripts/angularjs/angular-resource.js"></script>
+    <script src="Scripts/js/MasterPage.js"></script>
+
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="homeController">
+
+    <nav id="headerMain">
+        <div id="headerText">
+            <table id="headerTable">
+                <tr>
+                    <td>
+                        <div id="divHeaderImage">
+                            <img src="Images/JoeDeFrates.png" alt="Joe Defrates!" />
+                        </div>
+                    </td>
+                    <td><h1>Joe DeFrates Memorial Regional Chili Cookoff</h1></td>
+                </tr>
+            </table>
+        </div>
+        <div id="headerMainMenu">
+            <table id="headerMainMenuTable">
+                <tr>
+                    <td style="padding-right: 5em;">
+                        <a href="https://www.facebook.com/joedefrateschilicookoff">
+                            <img src="Images/Facebook.png" title="Please like us on Facebook!" />
+                        </a>
+                    </td>
+                    <td>
+                        <div id="ulMainMenu" class="mainMenu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#About">About</a></li>
+                                <li><a href="#Flyer">Flyer</a></li>
+                                <li><a href="#EventHistory">Event History</a></li>
+                                <li><a href="#JoesHistory">Joe's History</a></li>
+                                <li><a href="#Sponsors">Sponsors</a></li>
+                                <li><a href="#ContactUs">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </nav>
+
+    <div id="divMainBody" class="padTopLite">
+        <div ng-view></div>
+    </div>
+
+    <footer id="footerMain" class="padTopHeavy footer">
+
+        <p>Property of Joe Defrates Memorial Chili Cookoff. 2015.</p>
+
+    </footer>
+
+</body>
+
+</html>
