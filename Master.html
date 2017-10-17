@@ -21,15 +21,7 @@
     <script src="Scripts/angularjs/angular-resource.js"></script>
     <script src="Scripts/js/MasterPage.js"></script>
 
-</head>
-
-<!-- define angular controller -->
-<body ng-controller="homeController">
     <!-- Google Tag Manager -->
-    <noscript>
-        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-MN2FZQ"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
     <script>
         (function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -37,9 +29,22 @@
                 new Date().getTime(), event: 'gtm.js'
             }); var f = d.getElementsByTagName(s)[0],
             j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-            '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-MN2FZQ');</script>
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MN2FZQ');
+    </script>
     <!-- End Google Tag Manager -->
+
+</head>
+
+<!-- define angular controller -->
+<body ng-controller="homeController">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MN2FZQ"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <nav id="headerMain">
         <div id="headerText">
@@ -58,8 +63,8 @@
             <table id="headerMainMenuTable">
                 <tr>
                     <td style="padding-right: 5em;">
-                        <a href="https://www.facebook.com/joedefrateschilicookoff">
-                            <img src="Images/Facebook.png" title="Please like us on Facebook!" />
+                        <a id="facebook-link" href="https://www.facebook.com/joedefrateschilicookoff">
+                            <img src="Images/Facebook.png" title="Like us on Facebook!" />
                         </a>
                     </td>
                     <td>
